@@ -2,24 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb5082fc-5125-4279-9567-b97cbd5466c0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/IT_team_project/urls.py" afterPath="$PROJECT_DIR$/IT_team_project/urls.py" />
-      <change beforePath="$PROJECT_DIR$/manicurer/admin.py" afterPath="$PROJECT_DIR$/manicurer/admin.py" />
-      <change beforePath="$PROJECT_DIR$/manicurer/forms.py" afterPath="$PROJECT_DIR$/manicurer/forms.py" />
-      <change beforePath="$PROJECT_DIR$/manicurer/models.py" afterPath="$PROJECT_DIR$/manicurer/models.py" />
-      <change beforePath="$PROJECT_DIR$/manicurer/urls.py" afterPath="$PROJECT_DIR$/manicurer/urls.py" />
-      <change beforePath="$PROJECT_DIR$/manicurer/views.py" afterPath="$PROJECT_DIR$/manicurer/views.py" />
-      <change beforePath="$PROJECT_DIR$/population_script.py" afterPath="$PROJECT_DIR$/population_script.py" />
-      <change beforePath="$PROJECT_DIR$/static/js/comment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/js/manicurer-ajax.js" afterPath="$PROJECT_DIR$/static/js/manicurer-ajax.js" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/about.html" afterPath="$PROJECT_DIR$/templates/manicurer/about.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/base.html" afterPath="$PROJECT_DIR$/templates/manicurer/base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/greatest.html" afterPath="$PROJECT_DIR$/templates/manicurer/greatest.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/hotest.html" afterPath="$PROJECT_DIR$/templates/manicurer/hotest.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/index.html" afterPath="$PROJECT_DIR$/templates/manicurer/index.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/login.html" afterPath="$PROJECT_DIR$/templates/manicurer/login.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/myupload.html" afterPath="$PROJECT_DIR$/templates/manicurer/myupload.html" />
-      <change beforePath="$PROJECT_DIR$/templates/manicurer/register.html" afterPath="$PROJECT_DIR$/templates/manicurer/register.html" />
+      <change beforePath="$PROJECT_DIR$/media/images/ManiPic2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/ManiPic2_7Opcm25.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/ManiPic3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/ManiPic4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_10.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_10_y4BAZLs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_11.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_1_fo2d7AV.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_1_l2Y6NHT.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_2_EIRnw2a.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_2_M6Iw3o7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_2_u46tVbf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_2_uIg9pyw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/images/Screenshot_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/media/images/Screenshot_11.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/media/images/Screenshot_11_6VogMCU.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/media/images/Screenshot_6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/media/images/Screenshot_7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/media/media/images/Screenshot_8.png" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/templates/manicurer/myupload.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -114,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/templates/manicurer/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+              <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -124,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/manicurer/forms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -267,14 +272,13 @@
               <item name="IT_team_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="IT_team_project" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IT_team_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="IT_team_project" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
               <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IT_team_project" type="b2602c69:ProjectViewProjectNode" />
@@ -331,16 +335,16 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\media\images" />
+      <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\static\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\static\images" />
       <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\media\images" />
       <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\static\js" />
       <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\media\uploaded_images" />
       <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\templates\manicurer" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\media\images" />
-      <recent name="C:\Users\coolersun\PythonWorkspace\IT_team_project\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -783,7 +787,7 @@
     <entry file="file://$PROJECT_DIR$/templates/manicurer/myupload.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -799,7 +803,7 @@
     <entry file="file://$PROJECT_DIR$/manicurer/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -809,7 +813,7 @@
     <entry file="file://$PROJECT_DIR$/templates/manicurer/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding />
         </state>
       </provider>

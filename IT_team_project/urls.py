@@ -7,10 +7,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
                   url(r'^$', views.index, name='index'),
-                  url(r'manicurer/', include('manicurer.urls')),
+                  url(r'manicurer/', include('manicurer.urls', namespace='manicurer')),
 
                   # above maps any URLs starting
                   # with rango/ to be handled by
                   # the rango application
                   url(r'^admin/', admin.site.urls),
+
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

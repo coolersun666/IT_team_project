@@ -1,0 +1,17 @@
+
+
+body {
+    text-align:center;
+    text-decoration: none;
+    background-image: url(/static/images/background1.jpg);
+    background-attachment:fixed;
+    background-position:center;
+}
+
+
+ul {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+

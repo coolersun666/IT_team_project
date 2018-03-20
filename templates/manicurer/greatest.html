@@ -10,7 +10,7 @@
                 <ul>
                     {% for picture in pictures %}
                         <li>
-                        <a href="/manicurer/{{ picture.name }}">
+                        <a href="{% url 'manicurer:viewpicture' picture.name %}">
                             <img border="0" src="/media/images/{{ picture.name }}.jpg" />
                         </a>
                         </li>
@@ -22,7 +22,7 @@
                     {% endfor %}
                 </ul>
             {% else %}
-                <strong>There are no categories present.</strong>
+                <strong>There are no picture present.</strong>
             {% endif %}
         </div>
         {% else %}

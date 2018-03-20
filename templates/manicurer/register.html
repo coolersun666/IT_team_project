@@ -7,10 +7,10 @@
     <h1>Register for Manicurer</h1>
     {% if registered %}
         <strong>thank you for registering!</strong>
-        <a href="{% url 'index' %}">Return to the homepage.</a><br/>
+        <a href="{% url 'manicurer:index' %}">Return to the homepage.</a><br/>
     {% else %}
         <strong>register here!</strong><br />
-       <form id="user_form" method="post" action="{% url 'register' %}"
+       <form id="user_form" method="post" action="{% url 'manicurer:register' %}"
               enctype="multipart/form-data">
             {% csrf_token %}
 

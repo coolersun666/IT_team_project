@@ -1,19 +1,56 @@
-<!DOCTYPE html>
-{% block title_block %}
-    Register
-{% endblock %}
-{% block body_block %}
-    <h1>Register for Manicurer</h1>
-    {% if registered %}
-        <strong>Upload picture here!</strong><br />
-        <form  method="post" action="{% url 'myupload' %}"
-              enctype="multipart/form-data">
-            {% csrf_token %}
+{% extends 'manicurer/base.html' %}
+{% load staticfiles %}
 
-            {{ upload_form.as_p }}
+<html>
+        <head>
+            <link href="{% static 'css/upload.css'%} " rel="stylesheet" media="screen">
 
-            <input type="submit" name="submit" value="upload"/>
-        </form>
-    {% endif %}
-{% endblock %}
+                <title>Picture Upload </title>
+        </head>
+
+        {% block body_block %}
+            <p>
+            Picture Upload
+            </p>
+                <!-- List of uploaded documents -->
+                {% if pictures %}
+                <div>
+                {% for picture in pictures %}
+                    <tr>
+                    <li>
+                    {{ picture.name}}
+                    <img src={{ picture.picture.url }}/>
+                    </li>
+                    <li>
+                    <a href='{% url 'manicurer:delete' picture.name%}'>Delete</a>
+                    </li>
+                    </tr>
+                {% endfor %}
+                {% else %}
+                    <p>You have no picture!</p>
+                {% endif %}
+                 </div>
+                <!-- Upload form. Note enctype attribute! -->
+                <form action="{% url "manicurer:myupload" %}" method="post"
+                      enctype="multipart/form-data">
+                         {% csrf_token %}
+
+                        <p>{{ form.non_field_errors }}</p>
+                        <p>{{ form.picturefile.label_tag }} </p>
+                        <p>
+                                {{ form.picturefile.errors}}
+                                {{ form.picturefile }}
+                        </p>
+                        <p>{{ form.name.label_tag }}</p>
+                        <p>
+                            {{ form.name.errors}}
+                            {{ form.name }}
+                        </p>
+                        <p><input type="submit" value="Upload" /></p>
+                </form>
+
+
+
+        {% endblock %}
+
 </html>

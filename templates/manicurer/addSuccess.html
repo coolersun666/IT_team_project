@@ -1,0 +1,12 @@
+{% extends 'manicurer/base.html' %}
+{% load staticfiles %}
+<head>
+    <title>You have commentted it! </title>
+</head>
+{% block body_block %}
+    <h>You have commentted it successlly! </h>
+    {% if picture %}
+        <a href='{% url 'manicurer:viewpicture' name%}'>Go back</a>
+    {% endif %}
+{%endblock%}
+</html>

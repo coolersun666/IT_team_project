@@ -16,12 +16,22 @@ class Picture(models.Model):
     owner = models.CharField(max_length=100)
     NumberOfRates = models.IntegerField(default=0)
     avgrate = DecimalField(max_digits=2, decimal_places=1,default=0)
-
-
+    picture = models.ImageField(upload_to='images', blank=True)
+    context_object_name = 'name'
 
     class Meta:
         verbose_name_plural = 'Pictures'
 
     def __str__(self):  # For Python 2,use __unicode__too
         return self.name
+
+class Comment(models.Model):
+    user = models.ForeignKey(User, null=True)
+    picture = models.ForeignKey(Picture, null=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.content
+
+
 

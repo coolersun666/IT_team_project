@@ -1,32 +1,19 @@
 {% extends 'manicurer/base.html' %}
 {% load staticfiles %}
+
+<html>
+<head>
+    <link href="{% static 'css/index.css'%} " rel="stylesheet" media="screen">
+
 {% block title_block %}
     Index
 {% endblock %}
+</head>
 {% block body_block %}
     <h1>Manicurer</h1>
-    <h2><a href="/manicurer/hotest"> Hotest Manicures </a></h2>
-    <h2><a href="/manicurer/greatest"> Greatest Manicures </a></h2>
-        <div>
-            {% if pictures %}
-                <ul>
-                    {% for picture in pictures %}
-                        <li>
-                        <a href="/manicurer/{{ picture.name }}">
-                            <img border="0" src="/media/images/{{ picture.name }}.jpg" />
-                        </a>
-                        </li>
-                        <li>
-                            <b>
-                                Rate: {{ picture.avgrate }}       Comments: {{ picture.NumberOfRates }}
-                            </b>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% else %}
-                <strong>There are no categories present.</strong>
-            {% endif %}
-        </div>
+    <h2><a id="index" href="/manicurer/hotest"> Hotest Manicures </a></h2>
+    <h2><a id="index" href="/manicurer/greatest"> Greatest Manicures </a></h2>
+
 
     <div>
         {% if user.is_authenticated %}
@@ -37,3 +24,4 @@
     </div>
 
 {% endblock %}
+</html>

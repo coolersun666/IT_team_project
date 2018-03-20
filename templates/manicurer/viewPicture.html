@@ -1,0 +1,45 @@
+{% extends 'manicurer/base.html' %}
+{% load staticfiles %}
+
+<html>
+<head>
+    <link href="{% static 'css/comment.css'%} " rel="stylesheet" media="screen">
+
+    <title>Manicurer</title>
+
+</head>
+{% block body_block %}
+
+    {% if picture %}
+            <li id="container">{{ picture.name }}</li>
+        <p><img src="/media/images/{{ picture.name }}.jpg"></p>
+            <li id="aaa">Likes: {{ picture.NumberOfRates }}</li>
+            <li>Average Rate: {{ picture.avgrate }}</li>
+
+            <b><p>Comments</p></b>
+        {% if comments.exists %}:
+            {% for comment in comments %}:
+                <li id="container">{{ comment.user }}: {{ comment.content }}</li>
+            {% endfor %}
+        {% else %}
+            <p>No comment here.</p>
+        {% endif %}
+        <div>
+        {% if request.user.is_authenticated %}
+        <h2>Write Your Comment</h2>
+        </div>
+        <form class="span6" id="comment_form" method="post" action="{% url 'manicurer:add_comment' picture.name %}">
+            	{% csrf_token %}
+                <p>
+            	           	<br/>
+            	{{ comment_form.comment}}
+                </p>
+
+            	<button class="btn btn-lg btn-primary btn-block" type="submit">Comment</button>
+        </form>
+         {% endif %}
+        </div>
+    {% endif %}
+
+{% endblock %}
+</html>

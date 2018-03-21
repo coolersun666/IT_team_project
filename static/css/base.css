@@ -6,6 +6,7 @@ body {
     background-image: url(/static/images/background1.jpg);
     background-attachment:fixed;
     background-position:center;
+    background-size:100% 50%;
 }
 
 

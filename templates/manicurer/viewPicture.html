@@ -8,7 +8,7 @@
     <title>Manicurer</title>
 
 </head>
-{% block body_block %}
+{% block body%}
 
     {% if picture %}
             <li id="container">{{ picture.name }}</li>
@@ -37,8 +37,10 @@
 
             	<button class="btn btn-lg btn-primary btn-block" type="submit">Comment</button>
         </form>
+
          {% endif %}
         </div>
+         {% else %}<p>Where is picture</p>
     {% endif %}
 
 {% endblock %}

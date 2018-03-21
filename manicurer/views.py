@@ -19,6 +19,8 @@ from datetime import datetime, time
 from manicurer.models import UserProfile, Picture, Comment
 from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_protect
+
+
 # Create your views here.
 
 
@@ -30,13 +32,11 @@ def index(request):
 
 
 def about(request):
-
     context_dict = {}
     return render(request, 'manicurer/about.html', context_dict)
 
 
 def contact(request):
-
     context_dict = {}
     return render(request, 'manicurer/contact.html', context_dict)
 
@@ -50,7 +50,7 @@ def greatest(request):
 
 @login_required
 def add_comment(request, name):
-    context_dict={}
+    context_dict = {}
 
     try:
         picture = Picture.objects.get(name=name)
@@ -62,7 +62,7 @@ def add_comment(request, name):
     form = CommmentForm(request.POST)
     if form.is_valid():
         comment = form.cleaned_data['comment']
-        c = Comment(content=comment, picture = picture)
+        c = Comment(content=comment, picture=picture)
         c.user = user
         c.save()
 
@@ -84,19 +84,18 @@ def like_picture(request):
             return HttpResponse(likes)
 
 
-
-def viewPicture(request,pn):
+def viewPicture(request, pn):
     context_dict = {}
     comment_form = CommmentForm(request.POST)
     try:
-        picture=Picture.objects.get(name=pn)
+        picture = Picture.objects.get(name=pn)
         comments = Comment.objects.filter(picture=picture)
-        picture_list=Picture.objects.filter(name=pn)
+        picture_list = Picture.objects.filter(name=pn)
         context_dict = {'pictures': picture_list,
                         'name': pn,
-                        'comments':comments,
-                        'picture':picture,
-                        'comment_form':comment_form
+                        'comments': comments,
+                        'picture': picture,
+                        'comment_form': comment_form
                         }
     except Picture.DoesNotExist:
         context_dict['picture'] = None
@@ -126,6 +125,8 @@ def register(request):
                 profile.picture = request.FILES['picture']
             profile.save()
             registered = True
+
+            return HttpResponseRedirect(reverse('index'))
         else:
             print(user_form.errors, profile_form.errors)
     else:
@@ -160,40 +161,36 @@ def some_view(request):
     else:
         return HttpResponse("You are not logged in.")
 
-@login_required
 
+@login_required
 def myupload(request):
     # Handle file upload
     if request.method == 'POST':
         form = UploadForm(request.POST, request.FILES)
         if form.is_valid():
-            newPic = Picture(picture = request.FILES['picturefile'],owner=request.user.username,name=request.POST['name'])
+            newPic = Picture(picture=request.FILES['picturefile'], owner=request.user.username,
+                             name=request.POST['name'])
             newPic.save()
 
             # Redirect to the document list after POST
             return HttpResponseRedirect('/manicurer/media/myupload/')
     else:
-        form = UploadForm() # A empty, unbound form
-    picture_list=Picture.objects.filter(owner=request.user.username)
+        form = UploadForm()  # A empty, unbound form
+    picture_list = Picture.objects.filter(owner=request.user.username)
     # Render list page with the documents and the form
     return render(request,
-        'manicurer/myupload.html',
-        { 'form': form,'pictures': picture_list},
-    )
+                  'manicurer/myupload.html',
+                  {'form': form, 'pictures': picture_list},
+                  )
 
 
 @login_required
-def delete(request,name):
+def delete(request, name):
     context_dict = {'user': request.user}
-
 
     picture = Picture.objects.get(name=name).delete()
 
     return HttpResponseRedirect('/manicurer/media/myupload/')
-
-
-
-
 
 
 @login_required

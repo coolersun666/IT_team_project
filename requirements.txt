@@ -1,0 +1,6 @@
+Django==1.11
+image==1.5.19
+Pillow==5.0.0
+pytz==2018.3
+virtualenv==15.1.0
+virtualenvwrapper-win==1.2.5
